@@ -46,7 +46,7 @@ char	*read_text(int fd, char *statiq)
 		if (r > 0)
 		{
 			buf[r] = '\0';
-			statiq = ft_strjoin(statiq, buf);
+			statiq = _ft_strjoin(statiq, buf);
 		}
 	}
 	free(buf);
