@@ -25,7 +25,7 @@ char	*read_text(int fd, char *statiq);
 char	*extract_line(char *statiq);
 char	*next_line(char *statiq);
 char	*_ft_strjoin(char *statiq, char *buf);
-size_t	ft_strlen(const char *s);
+size_t	_ft_strlen(const char *s);
 char	*ft_strchr(const char *s, int c);
 
 #endif
