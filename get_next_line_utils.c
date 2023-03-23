@@ -25,7 +25,7 @@ char	*_ft_strjoin(char *statiq, char *buf)
 	}
 	i = -1;
 	j = -1;
-	ptr = malloc(sizeof(char) * (ft_strlen(statiq) + ft_strlen(buf) + 1));
+	ptr = malloc(sizeof(char) * (_ft_strlen(statiq) + _ft_strlen(buf) + 1));
 	if (!ptr)
 		return (NULL);
 	while (statiq[++i])
@@ -39,7 +39,7 @@ char	*_ft_strjoin(char *statiq, char *buf)
 	return (ptr);
 }
 
-size_t	ft_strlen(const char *s)
+size_t	_ft_strlen(const char *s)
 {
 	int	i;
 
@@ -55,7 +55,7 @@ char	*ft_strchr(const char *s, int c)
 	int	length;
 
 	i = 0;
-	length = ft_strlen(s) + 1;
+	length = _ft_strlen(s) + 1;
 	while (i < length)
 	{
 		if (*s == (char)c)
