@@ -101,7 +101,7 @@ char	*next_line(char *statiq)
 		free(statiq);
 		return (NULL);
 	}
-	next_statiq = malloc(sizeof(char) * (ft_strlen(statiq) - i));
+	next_statiq = malloc(sizeof(char) * (_ft_strlen(statiq) - i));
 	if (!next_statiq)
 	{
 		free(statiq);
